@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sad Valentine's Day</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="container">
+      <h1>Sad Valentine's Day</h1>
+      <img id="sadImage" src="" alt="Sad Valentine's Day Image">
+      <p>sad pao, :(</p>
+      <br>
+      <p>( &gt;&gt; load the page again to see a different sad pao &lt;&lt;) </p>
+    </div>
+  </body>
+  <script>
+    const sadImages = [
+      "sad1.jpg",
+      "sad2.jpg",
+      "sad3.jpg",
+      "sad4.jpg",
+      "sad5.jpeg"
+    ];
+    const randomIndex = Math.floor(Math.random() * sadImages.length);
+    const sadImage = document.getElementById("sadImage");
+    sadImage.src = `images/${sadImages[randomIndex]}`;
+  </script>
+</html>
